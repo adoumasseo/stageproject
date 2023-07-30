@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="icon"  sizes= "250*250" href="../../public/img/LogoDGitransaparant.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Profil</title>
+</head>
+<body class="body">
+    <aside class="aside">
+        <div class="sidebar">
+            <div class="header">
+                <div class="bars">
+                    <img src="../../public/img/logodgi.jpg" alt="">
+                </div>
+                <h1 class="title">Direction Générale des Impôts(DGI)</h1>
+            </div>
+            <div class="link">
+                <a href = "./defaultboss.html" class="page ">
+                    <div class="icon">
+                        <i class='bx bxs-time'></i>
+                    </div>
+                    <div class="pagename">Historique des demandes</div>
+                </a>
+                <a href = "./dmatériaux.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <div class="pagename">Demande de matériels</div>
+                </a>
+                <a href = "./congés.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="pagename">Demandes de congés</div>
+                </a>
+                <a href = "./absence.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-day"></i>
+                    </div>
+                    <div class="pagename ">Absence</div>
+                </a>
+                <a href = "./traitement.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <div class="pagename ">Traitement </div>
+                </a>
+               
+                <!-- <a href = "./inventaire.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-inbox"></i>
+                    </div>
+                    <div class="pagename ">Inventaire des matériaux</div>
+                </a> -->
+                <a href = "./personel.html" class="page">
+                    <div class="icon">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="pagename ">Personels</div>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <main class="container">
+        <nav class="navBar">
+            <div class="titlecontainer">
+                <h1>Profil</h1>
+            </div>
+            <div class="profil">
+
+                <a href="#" title="Paramètre" class="settings">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <div class="picture">
+                    <a href="./profil.html"><img src="../../public/img/meuf.jpg" alt="profil picture" title="profil"></a>
+                </div>
+                <div class="name">
+                    <div class="firstname">Ortniel</div>
+                    <div class="lastname">ADOUMASSE</div>
+                </div>
+            </div>
+        </nav>
+        <div class="info">
+            <div class="profilpicture">
+                <img src="../../public/img/meuf.jpg" alt="pictureprofile" class="pictureprofile">
+            </div>
+            <form action="" class="changeprofil">
+                <input type="file">
+                <div class="textreplace">Changer la photo</div>
+            </form>
+            <table class="table">
+                <thead class="tablehead">
+                    <tr class="line">
+                        <td class="columns">Libellé</td>
+                        <td class="columns">Informations</td> 
+                    </tr>
+                </thead>
+                <tbody class="tablebody">
+                    <tr class="line firstname">
+                        <td class="columns libele">Nom</td>
+                        <td class="columns ">ADOUMASSE</td>
+                    </tr>
+                    <tr class="line lastname">
+                        <td class="columns libele">Prénoms</td>
+                        <td class="columns">Dona Ortniel</td>
+                    </tr>
+                    <tr class="line password">
+                        <td class="columns libele">Mot de passe</td>
+                        <td class="columns">Jolidon21</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form action="" class="modifsenreg">
+                    <div class="btn">
+                        <div class="changepasswd">Changer le mot de passe</div>
+                        <button type="submit">Enregistrer les modifications</button>
+                    </div>
+            </form>
+        </div>
+    </main>
+    <div class="background"></div>
+    <form action="" class="pop">
+        <input type="password" placeholder="Ancien mot de passe" class="passwd first">
+        <input type="password" placeholder="Nouveau mot de passe" class="passwd">
+        <input type="password" placeholder="Confimez mot de passe" class="passwd">
+        <div class="btnpop">
+            <div class="showpass">Afficher mot de passe</div>
+            <button type="submit" class="savepasswd">Enregistrer</button>
+        </div>
+    </form>
+    <!-- Faire afficher mot de passes et modifer mot de passes -->
+    <!-- Sans oublier enrégistrer informations -->
+    <script src="../js/profil.js"></script>
+</body>
+</html>

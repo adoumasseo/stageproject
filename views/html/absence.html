@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/absence.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="icon"  sizes= "250*250" href="../../public/img/LogoDGitransaparant.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Abscence</title>
+</head>
+<body class="body">
+    <aside class="aside">
+        <div class="sidebar">
+            <div class="header">
+                <div class="bars">
+                    <img src="../../public/img/logodgi.jpg" alt="">
+                </div>
+                <h1 class="title">Direction Générale des Impôts(DGI)</h1>
+            </div>
+            <div class="link">
+                <a href = "./defaultboss.html" class="page ">
+                    <div class="icon">
+                        <i class='bx bxs-time'></i>
+                    </div>
+                    <div class="pagename">Historique des demandes</div>
+                </a>
+                <a href = "./dmatériaux.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-toolbox"></i>
+                    </div>
+                    <div class="pagename">Demande de matériels</div>
+                </a>
+                <a href = "./congés.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="pagename">Demandes de congés</div>
+                </a>
+                <a href = "./absence.html" class="page default">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar-day"></i>
+                    </div>
+                    <div class="pagename ">Absence</div>
+                </a>
+                <a href = "./traitement.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-file"></i>
+                    </div>
+                    <div class="pagename ">Traitement </div>
+                </a>
+               
+                <!-- <a href = "./inventaire.html" class="page">
+                    <div class="icon">
+                        <i class="fa-solid fa-inbox"></i>
+                    </div>
+                    <div class="pagename ">Inventaire des matériaux</div>
+                </a> -->
+                <a href = "./personel.html" class="page">
+                    <div class="icon">
+                        <i class='bx bxs-user'></i>
+                    </div>
+                    <div class="pagename ">Personels</div>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <main class="letter">
+        <nav class="navBar">
+            <div class="titlecontainer">
+                <h1>Absence</h1>
+            </div>
+            <div class="profil">
+
+                <a href="#" title="Paramètre" class="settings">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <div class="picture">
+                    <a href="./profil.html"><img src="../../public/img/meuf.jpg" alt="profil picture" title="profil"></a>
+                </div>
+                <div class="name">
+                    <div class="firstname">Ortniel</div>
+                    <div class="lastname">ADOUMASSE</div>
+                </div>
+            </div>
+        </nav>
+        <header class="headerone">
+            <section class="suscription">
+                <div class="firstlastname">ADOUMASSE Dona Ortniel</div>
+                <div class="role">Programmeur purpitreur</div>
+                <div class="service">Génie Logiciel</div>
+                <div class="direction">Direction Informatique </div>
+            </section>
+            <section class="datelocation">
+                Cotonou, le 25 juin 2023
+            </section>
+        </header>
+        <section class="recepteur">
+            <div class="">A</div>
+            <div class="">Monsieur le Directeur Générale des Impôts</div>
+            <div class="">(Att. Directeur de la Gestion des ressoures humaines)</div>
+            <div class="location">Cotonou</div>
+        </section>
+        <section class="object">
+            <span>Oject :</span>
+            <span>Demande d'absence administrative</span>
+        </section>
+        <section class="content">
+            <div class="entete">Monsieur le Directeur Général</div>
+            <div class="corps">
+                J'ai l'honneur de solliciter auprès de votre haute bienveillance,
+                la jouissance d'une absence administrative,
+                du <span class="beginweek">jj/nn/aaaa</span>  au <span class="beginweek">jj/nn/aaaa</span>
+                inclus pour le compte de l'année 2012.
+                Ci-joint le titre de congé administratif
+                du 16 juillet 2012.
+                Veuillez agréer, Monsieur le Directeur Général,
+                l'expression de mes considérations très distinguées.
+
+            </div>
+        </section>
+        <section class="souscription">
+            <div class="pj">
+               <h1>Pièces Jointes</h1>
+               <span>Une copie du titre de congés</span>
+            </div>
+            <div class="sous">Ortniel ADOUMASSE</div>
+        </section>
+        <section class="submit">
+            <div class="adddate">
+                Ajouter les dates
+            </div>
+            <form action="">
+                <button type="submit">Envoyer la demande</button>
+            </form>  
+        </section>
+    </main>
+    <div class="background"></div>
+    <form action="" class="pop">
+        <div class="inputcontainer">
+            <input type="date" id="datedebut" placeholder="Date de début (jj/nn/aaaa)" class="date">
+        </div>
+
+        <div class="inputcontainer">
+            <input type="date" id="datefin" placeholder="Date de fin (jj/nn/aaaa)" class="date">
+        </div>
+
+        <div class="inputcontainer">
+            <input type="text" placeholder="Supérieur hiérarchique (Nom et Prenoms)" class="date">
+        </div>
+
+        <div class="btnpop">
+            <button type="submit" class="save">Enregistrer</button>
+        </div>
+    </form>
+    <!-- <section class="popupcontainer">
+        <div class="container">
+            <form action="" class="formulaire">
+                <input type="date" class="beginweek" placeholder="12/10/2023">
+            </form>
+            <form action="" class="formulaire">
+                <input type="date" class="beginweek" placeholder="12/10/2023">
+            </form>
+        </div>
+    </section> -->
+    <script src="../js/absence.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body::-webkit-scrollbar {
+    width:5px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #054ac06b;
+    border-radius: 5px;
+}
+/* Le thumb s'occupe de la chose qui se déplace quand on scroll et le track s'occupe de la chose sur laquelle on scroll */
+body::-webkit-scrollbar-thumb {
+    background-color: #054ac0; 
+    border-radius: 5px; 
+}

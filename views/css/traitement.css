@@ -1,0 +1,453 @@
+/* ================================ LES REGLAGES DE BASES============================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+* 
+{
+    margin: 0px;
+    padding: 0;
+    font-family: "Poppins";
+    outline: none;
+}
+html,body{
+
+    width: 100%;
+    height: 100vh;
+}
+.body
+{
+    display: flex;
+}
+
+/* ================================ LES REGLAGES DE BASES============================ */
+
+/* ================================ LA SIDE BAR============================ */
+.header .bars,
+.sidebar .link .page .icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside
+{
+    width: 30%;
+    height: 200vh;
+    transition: all 0.1s ease;
+    /* background-color: #054ac0;    */
+}
+.asidesmall.aside
+{
+    width: 4%;
+}
+
+.sidebar
+{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding-left: 5px;
+}
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.header .bars
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    background-color: rgba(128, 128, 128, 0.312);
+
+}
+.header .bars:hover
+{
+    background-color: rgba(128, 128, 128, 0.512);
+}
+.header .title
+{
+    width: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sidebar .link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+.default
+{
+    background-color: rgba(18, 125, 232, 0.409);
+}
+.sidebar .link .page
+{
+    display: flex;
+    align-items: center;
+    width: 98%;
+    height: 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+    margin-bottom: 5px;
+}
+.sidebar .link .page:hover
+{
+    background-color: rgba(18, 125, 232, 0.409);
+}
+.sidebar .link .page .icon
+{
+    width: 20%;
+    height: 44px;
+    font-size: 20px;
+}
+.sidebar .link .page .icon.iconsmall
+{
+    width: 100%;
+}
+.sidebar .link .page .pagename
+{
+    padding-top: 26px;
+    height: 44px;
+    width: 80%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.pagename.disappear
+{
+    display: none;
+}
+.disappear
+{
+    display: none;
+}
+.appearflex
+{
+    display: flex;
+}
+.appearblock
+{
+    display: block;
+}
+.disappeardemande
+{
+    display: none;
+}
+
+/* ================================ LA SIDE BAR============================ */
+.header .bars,
+.sidebar .link .page .icon
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside
+{
+    width: 30%;
+    height: 200vh;
+    transition: all 0.1s ease;
+    /* background-color: #054ac0;    */
+}
+.asidesmall.aside
+{
+    width: 4%;
+}
+
+.sidebar
+{
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid white;
+    padding-left: 5px;
+}
+.header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+.header .bars
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    background-color: rgba(128, 128, 128, 0.312);
+
+}
+.header .bars:hover
+{
+    background-color: rgba(128, 128, 128, 0.512);
+}
+.header .title
+{
+    width: 70%;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sidebar .link
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30%;
+    margin-top: 30px;
+}
+.default
+{
+    background-color: rgba(18, 125, 232, 0.409);
+}
+.sidebar .link .page
+{
+    display: flex;
+    align-items: center;
+    width: 98%;
+    height: 45px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+    margin-bottom: 5px;
+}
+.sidebar .link .page:hover
+{
+    background-color: rgba(18, 125, 232, 0.409);
+}
+.sidebar .link .page .icon
+{
+    width: 20%;
+    height: 44px;
+    font-size: 20px;
+}
+.sidebar .link .page .icon.iconsmall
+{
+    width: 100%;
+}
+.sidebar .link .page .pagename
+{
+    padding-top: 26px;
+    height: 44px;
+    width: 80%;
+    font-size: 13px;
+    font-weight: bold;
+}
+.pagename.disappear
+{
+    display: none;
+}
+.disappear
+{
+    display: none;
+}
+.appearflex
+{
+    display: flex;
+}
+.appearblock
+{
+    display: block;
+}
+.disappeardemande
+{
+    display: none;
+}
+/* ================================ LE CONTENU ============================ */
+
+.container
+{
+    width: 96%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar
+{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 95%;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #054ac0;
+}
+.picture,.picture a
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid black; */
+
+}
+.picture a img
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.navbar .profil
+{
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    /* border: 1px solid black; */
+}
+.profil .settings
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    /* border: 1px solid black; */
+
+}
+.profil .name
+{
+    color: rgb(255, 255, 255);
+    margin-top: -2px;
+    /* border: 1px solid black; */
+
+}
+.navbar .titlecontainer
+{
+    align-self: flex-start;
+    color: white;
+    width: 100%;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+.navbar .titlecontainer h1
+{
+    font-size: 40px;
+}
+.navbar .titlecontainer h2
+{
+    font-size: 20px;
+    font-weight: normal;
+    /* border: 1px solid black; */
+}
+
+.demandeSection
+{
+    width: 95%;
+    margin-top: 10px;
+}
+.bttom
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+.demandeSection table
+{
+    width: 100%;
+}
+.demandeSection .firsttd 
+{
+    border-radius: 10px 0px 0px 0px;
+}
+.demandeSection .lasttd 
+{
+    border-radius: 0px 10px 0px 0px;
+}
+.demandeSection table thead tr td
+{
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    background: #054ac0;
+}
+.demandeSection table tbody tr
+{
+    transition:box-shadow 0.2s ease-in-out ;
+}
+.demandeSection table tbody tr:hover
+{
+    box-shadow: 2px 2px 5px rgba(113, 113, 113, 0.676);
+}
+.demandeSection table tbody tr .td
+{
+    width: 20%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    background: #bfd0ed74;
+    transition: background 0.3s ease;
+}
+.demandeSection table tbody tr .td a
+{
+    text-decoration: none;
+    color: black;
+}
+/* ================le code couleur ================= */
+/* en attente bleu pale  */
+/* en cours de traitement bleu foncé */
+/* accordé vers foncé restructurer vers clair */
+/* refus et annulerpossible rouge transparent */
+.demandeSection table tbody tr .enattente
+{
+    background:#054ac06d;
+}
+.demandeSection table tbody tr .encours
+{
+    background:#054ac0b2;
+}
+.demandeSection table tbody tr .valide
+{
+    background:#00ff4cbc;
+}
+.demandeSection table tbody tr .Restructure
+{
+    background:#00ff4c78;
+}
+.demandeSection table tbody tr .refus,
+.demandeSection table tbody tr .annuler
+{
+    background:#ff00007c;
+}
+.actionuser
+{
+    cursor: pointer;
+}
+/* ================================ LE CONTENU ============================ */

@@ -1,0 +1,230 @@
+/* ================================ LES REGLAGES DE BASES============================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* 
+{
+    margin: 0px;
+    padding: 0;
+    font-family: "Poppins";
+    outline: none;
+}
+html,body{
+
+    width: 100%;
+    height: 100vh;
+}
+.body
+{
+    display: flex;
+    overflow-y: hidden;
+}
+
+/* ================================ LES REGLAGES DE BASES============================ */
+/* ================================ LA SIDE BAR============================ */
+.header .bars img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: all 0.4s ease;
+    background-color: rgba(128, 128, 128, 0.312);
+
+}
+
+/* ================================ LA SIDE BAR============================ */
+
+/* ================================ La lettre =======================================*/
+
+.letter
+{
+    width: 100%;
+    min-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    margin-left: 20px;
+}
+
+.headerone
+{
+    width: 90%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* border: 1px solid black; */
+}
+
+.headerone .suscription .firstlastname 
+{
+    font-weight: bolder;
+}
+.object
+{
+    margin-top: 15px;
+    width: 90%;
+}
+.recepteur 
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.recepteur :nth-child(n)
+{
+    width: 60%;
+    text-align: center;
+}
+.recepteur :nth-child(1),.recepteur :nth-child(4),.recepteur :nth-child(2)
+{
+    font-weight: bolder;
+}
+.recepteur :nth-child(4)
+{
+    text-decoration: underline;
+}
+.object :first-child
+{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.content 
+{
+    width: 90%;
+}
+.content .entete
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulaire
+{
+    display: inline;
+}
+.beginweek
+{
+    background: rgba(5, 75, 136, 0.274);
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px 10px 2px 10px;
+}
+.letter .corps
+{
+    text-align: justify;
+}
+
+.souscription,.submit
+{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.adddate
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.souscription h1
+{
+    font-size: 16px;
+}
+.souscription .sous
+{
+   font-weight: bolder;
+   margin-top: 60px;
+}
+.pj
+{
+    margin-top: 25px;
+}
+.submit
+{
+    width: 90%;
+    margin-top: 15px;
+}
+.submit button,.adddate
+{
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    font-size: 13px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+    background: #05c078;
+    cursor: pointer;
+    color: white;
+}
+
+.pop
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 260px;
+    background-color: rgb(239, 239, 239);
+    margin-top: -100%;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.pop input[placeholder = "Date de début (jj/nn/aaaa)"]
+{
+    margin-top: 20px;
+}
+.date
+{
+    width: 300px;
+    height: 35px;
+    background: #90a49c71;
+    border: 0px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+.pop .save
+{
+    width: 120px;
+    height: 35px;
+    background: #05c078;
+    border: 0px;
+    border-radius: 5px;
+}
+::placeholder
+{
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+}
+.background
+{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.848);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.background.appearbg
+{
+    top: 0;
+    visibility: visible;
+}
+.pop.appearform
+{
+    margin-top: 0%;
+    visibility: visible;
+    z-index: 6;
+}
+/* ================================ La lettre =======================================*/

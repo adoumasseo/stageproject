@@ -1,0 +1,221 @@
+/* ================================ LES REGLAGES DE BASES============================ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+* 
+{
+    margin: 0px;
+    padding: 0;
+    font-family: "Montserrat";
+    outline: none;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+.body,.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ================================ LES REGLAGES DE BASES============================ */
+
+/* ================================Gestion du style générale ================================*/
+
+.body
+{
+    background: url("../../public/img/bgandbf.jpg");
+    background-size: cover;
+    background-position: 15%;
+}
+.container
+{
+    flex-direction: column;
+    width: 40%;
+    height: 350px;
+    border-radius: 10px;   
+    backdrop-filter: blur(2px);
+}
+/* ================================Gestion du style générale ================================*/
+
+/* =================================Le style du form  ==================================== */
+.title,.useravatar
+{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 8px;
+    width: 80%;
+}
+.useravatar
+{
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+.formulaire,.inputicon,.icon
+{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.diverror{
+    width: 80%;
+    border-radius: 10px;
+    height: 45px;
+}
+.inputicon 
+{
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.279);
+    justify-content: center;
+    flex-direction: row;
+    height: 45px;
+}
+.inputicon input[type="text"],.inputicon input[type="password"],.inputicon input[type="file"]
+{
+    outline: none;
+    border: 0px;
+    width: 80%;
+    height: 40px;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding-left: 15px;
+}
+.parentdiv
+{
+    
+    width: 80%;
+    position: relative;
+}
+.choose
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: -1;
+    width: 50%;
+    height: 45px;
+    color: white;
+    font-size: 15px;
+    padding-left: 6%;
+}
+.inputicon input[type="file"]
+{
+    font-size: 100px;
+    opacity: 0;  
+}
+.icon
+{
+    width: 50px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+::placeholder
+{
+    color: white;
+    font-size: 15px;
+}
+.send
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 45px;
+    /* flex-direction: row; */
+}
+.send .btn,.send .showpass
+{
+    outline: none;
+    border: 0px;
+    height: 45px;
+    width: 120px;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: rgba(18, 232, 75, 0.423);
+}
+.send .btn:hover
+{
+    transform: scale(0.98);
+    background-color: rgba(18, 232, 75, 0.423);
+}
+.send .showpass
+{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s ease;
+    background-color: rgba(18, 125, 232, 0.47);
+}
+.send .showpass:hover
+{
+    transform: scale(0.98);
+    background-color: rgba(18, 125, 232, 0.47);
+}
+/* =================================Le style du form  ==================================== */
+
+/*================================= Responsive design =================================*/
+@media screen and (min-width : 700px) and (max-width: 1200px) {
+    .container
+    {
+        width: 70%;
+        backdrop-filter: blur(4px);
+    }
+    .inputicon 
+    {
+        background-color: rgba(217, 217, 217, 0.345);
+    }
+}
+@media screen and (max-width: 699px) {
+    
+    .container
+    {
+        width: 90%;
+        backdrop-filter: blur(4px);
+    }
+    .inputicon 
+    {
+        background-color: rgba(217, 217, 217, 0.345);
+    }
+    .send .showpass
+    {
+        width: 200px;
+    }
+}
+@media screen  and (max-width: 450px) {
+    
+    .container
+    {
+        width: 100%;
+        backdrop-filter: blur(4px);
+    }
+    .inputicon 
+    {
+        background-color: rgba(217, 217, 217, 0.345);
+    }
+    .send .showpass
+    {
+        width: 200px;
+    }
+    .inputicon input[type="text"],.inputicon input[type="password"],.inputicon input[type="file"],
+    .title,.useravatar,.send,.parentdiv,.inputicon ,.formulaire
+    {
+        width: 98%;
+    }
+}
+/*================================= Responsive design =================================*/
