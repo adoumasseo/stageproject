@@ -11,7 +11,7 @@
 }
 section
 {
-   width: 90%;
+   width: 95%;
 }
 .table
 {
@@ -128,7 +128,7 @@ button[type="submit"]
 }
 .footer
 {   
-    width: 90%;
+    width: 95%;
     margin-top: 40px;
     text-align: end;
 }

@@ -50,7 +50,7 @@ html,body{
 }
 .headerone
 {
-    width: 90%;
+    width: 95%;
     height: 120px;
     display: flex;
     justify-content: space-between;
@@ -65,11 +65,11 @@ html,body{
 .object
 {
     margin-top: 15px;
-    width: 90%;
+    width: 95%;
 }
 .recepteur 
 {
-    width: 90%;;
+    width: 95%;;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -94,7 +94,7 @@ html,body{
 }
 .content 
 {
-    width: 90%;
+    width: 95%;
 }
 .content .entete
 {
@@ -120,7 +120,7 @@ html,body{
 
 .souscription,.submit
 {
-    width: 90%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
 }
@@ -145,7 +145,7 @@ html,body{
 }
 .submit
 {
-    width: 90%;
+    width: 95%;
     margin-top: 15px;
 }
 .submit button,.adddate
