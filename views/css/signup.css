@@ -36,7 +36,7 @@ html,body
     width: 40%;
     height:auto;
     border-radius: 10px;   
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(0px);
 }
 /* ================================Gestion du style générale ================================*/
 

@@ -33,7 +33,7 @@ html,body{
 .aside
 {
     width: 30%;
-    height: 200vh;
+    height: var(--heightDynamic);
     transition: all 0.1s ease;
     /* background-color: #054ac0;    */
 }
@@ -154,136 +154,7 @@ html,body{
 }
 
 /* ================================ LA SIDE BAR============================ */
-.header .bars,
-.sidebar .link .page .icon
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.aside
-{
-    width: 30%;
-    height: 200vh;
-    transition: all 0.1s ease;
-    /* background-color: #054ac0;    */
-}
-.asidesmall.aside
-{
-    width: 4%;
-}
-
-.sidebar
-{
-    width: 100%;
-    position: sticky;
-    top: 0px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid white;
-    padding-left: 5px;
-}
-.header
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 95%;
-    height: 50px;
-    margin-top: 20px;
-    cursor: pointer;
-    margin-left: 2px;
-}
-.header .bars
-{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 25px;
-    transition: all 0.4s ease;
-    background-color: rgba(128, 128, 128, 0.312);
-
-}
-.header .bars:hover
-{
-    background-color: rgba(128, 128, 128, 0.512);
-}
-.header .title
-{
-    width: 70%;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-}
-
-.sidebar .link
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 30%;
-    margin-top: 30px;
-}
-.default
-{
-    background-color: rgba(18, 125, 232, 0.409);
-}
-.sidebar .link .page
-{
-    display: flex;
-    align-items: center;
-    width: 98%;
-    height: 45px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: black;
-    transition: 0.2s ease;
-    margin-bottom: 5px;
-}
-.sidebar .link .page:hover
-{
-    background-color: rgba(18, 125, 232, 0.409);
-}
-.sidebar .link .page .icon
-{
-    width: 20%;
-    height: 44px;
-    font-size: 20px;
-}
-.sidebar .link .page .icon.iconsmall
-{
-    width: 100%;
-}
-.sidebar .link .page .pagename
-{
-    padding-top: 26px;
-    height: 44px;
-    width: 80%;
-    font-size: 13px;
-    font-weight: bold;
-}
-.pagename.disappear
-{
-    display: none;
-}
-.disappear
-{
-    display: none;
-}
-.appearflex
-{
-    display: flex;
-}
-.appearblock
-{
-    display: block;
-}
-.disappeardemande
-{
-    display: none;
-}
 /* ================================ LE CONTENU ============================ */
 
 .container

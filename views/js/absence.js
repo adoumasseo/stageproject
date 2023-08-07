@@ -5,9 +5,11 @@ const popup = document.querySelector(".pop");
 adddate.addEventListener("click", () => {
   popup.classList.toggle("appearform");
   background.classList.toggle("appearbg");
+  overflow();
 });
 
 background.addEventListener("click", () => {
     popup.classList.toggle("appearform");
     background.classList.toggle("appearbg");
+    overflow();
   });

@@ -2,7 +2,7 @@
 /* ================================ LES REGLAGES DE BASES============================ */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * 
 {
     margin: 0px;
@@ -34,7 +34,7 @@ html,body{
 .aside
 {
     width: 420px;
-    height: 200vh;
+    height: var(--heightDynamic);
     transition: all 0.1s ease;
     /* background-color: #054ac0;    */
 }
@@ -130,7 +130,7 @@ html,body{
     padding-top: 26px;
     height: 44px;
     width: 80%;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
 }
 .pagename.disappear

@@ -21,6 +21,11 @@ console.log(statut);
 
 window.addEventListener("load", () => {
   statut.forEach((statut) => {
+
+  const line = document.querySelectorAll(".line");
+  const lenght = line.length;
+  aside.style.setProperty("--heightDynamic", lenght* 50 + 330 + "px");
+  
     if (statut.textContent == "En Congés") {
       statut.classList.add("conges");
     } else if (statut.textContent == "Actif") {

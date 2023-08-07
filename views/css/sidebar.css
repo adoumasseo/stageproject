@@ -1,7 +1,7 @@
 /* ================================ LES REGLAGES DE BASES============================ */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 * 
 {
     margin: 0px;
@@ -139,7 +139,7 @@ html,body{
     padding-top: 26px;
     height: 44px;
     width: 80%;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
 }
 .pagename.disappear

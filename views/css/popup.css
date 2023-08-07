@@ -52,22 +52,23 @@
 .background
 {
     position: absolute;
-    top: -100%;
+    top: var(--scrollTop);
     left: 0;
+    margin-top: -100%;
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.848);
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.835);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 .background.appearbg
 {
-    top: 0;
+   margin-top: 0;
     visibility: visible;
 }
 .pop.appearform
 {
-    margin-top: 0%;
+    margin-top: 0;
     visibility: visible;
     z-index: 6;
 }

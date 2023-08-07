@@ -18,6 +18,11 @@ bars.addEventListener("click", () => {
 // Gestion du code couleur
 const statut = document.querySelectorAll(".statut");
 window.addEventListener("load", () => {
+  const line = document.querySelectorAll(".line");
+  const lenght = line.length;
+
+  aside.style.setProperty("--heightDynamic", lenght* 50 + 330 + "px");
+  
   statut.forEach((statut) => {
     if (statut.textContent == "En attente") {
       statut.classList.add("enattente");

@@ -15,12 +15,23 @@ bars.addEventListener("click", () => {
   });
 });
 
+const popup = document.querySelector(".pop");
+const background = document.querySelector(".background");
+const cancel = document.querySelector(".cancelcancel");
+
+window.addEventListener("scroll",()=>{
+  background.style.setProperty("--scrollTop", window.scrollY +"px")
+})
+
 // Gestion du code couleur
 const statut = document.querySelectorAll(".statut");
 const actionUtilisateur = document.querySelectorAll(".actionuser");
-// console.log(actionUtilisateur);
 
 window.addEventListener("load", () => {
+  const line = document.querySelectorAll(".line");
+  const lenght = line.length;
+
+  aside.style.setProperty("--heightDynamic", lenght* 50 + 330 + "px");
   statut.forEach((statut) => {
     if (statut.textContent == "En attente") {
       statut.classList.add("enattente");
@@ -34,29 +45,27 @@ window.addEventListener("load", () => {
       statut.classList.add("Restructure");
     }
   });
-  const popup = document.querySelector(".pop");
-  const background = document.querySelector(".background");
-  const cancel = document.querySelector(".cancelcancel")
+
   
   actionUtilisateur.forEach((actionUtilisateur) => {
-    if ((actionUtilisateur.textContent == "Annuler la demande")) {
+    if (actionUtilisateur.textContent == "Annuler la demande") {
       actionUtilisateur.classList.add("annuler");
-      actionUtilisateur.addEventListener("click",()=>{
+      actionUtilisateur.addEventListener("click", () => {
         popup.classList.toggle("appearform");
         background.classList.toggle("appearbg");
+        overflow();
       });
-      
-    } 
+    }
     background.addEventListener("click", () => {
       popup.classList.toggle("appearform");
       background.classList.toggle("appearbg");
+      overflow();
     });
 
     cancel.addEventListener("click", () => {
       popup.classList.toggle("appearform");
       background.classList.toggle("appearbg");
+      overflow();
     });
   });
 });
-
-
